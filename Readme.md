@@ -18,7 +18,8 @@ It shows:
 ### Installing
 To install just clone this repository
 ```
-git clone
+git clone git@github.com:VicPeralta/RecommenderSystem.git or
+git clone https://github.com/VicPeralta/RecommenderSystem.git
 ```
 ## Sample captures
 ![alt text](captures/main.png?raw=true "Main")
