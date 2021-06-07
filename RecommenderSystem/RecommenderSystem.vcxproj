@@ -18,6 +18,30 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ConsoleShowData.cpp" />
+    <ClCompile Include="source\DummyDataProvider.cpp" />
+    <ClCompile Include="source\IDataProvider.cpp" />
+    <ClCompile Include="source\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="source\recommender.cpp" />
+    <ClCompile Include="source\RecommenderSystem.cpp" />
+    <ClCompile Include="source\SqlDataProvider.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConsoleShowData.h" />
+    <ClInclude Include="include\consoleUtils.h" />
+    <ClInclude Include="include\Customer.h" />
+    <ClInclude Include="include\DummyDataProvider.h" />
+    <ClInclude Include="include\IDataProvider.h" />
+    <ClInclude Include="include\Item.h" />
+    <ClInclude Include="include\pch.h" />
+    <ClInclude Include="include\Recommender.h" />
+    <ClInclude Include="include\SalesHistory.h" />
+    <ClInclude Include="include\SqlDataProvider.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -123,12 +147,12 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\Victor\source\poco\Foundation\include;C:\Users\Victor\source\poco\Data\include;C:\Users\Victor\source\poco\Data\ODBC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)dependencies\include\poco\foundation\include;$(ProjectDir)dependencies\include\poco\data\include;$(ProjectDir)dependencies\include\poco\data\odbc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Victor\source\poco\cmake-build\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)\dependencies\lib\Poco\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -142,41 +166,16 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\Victor\source\poco\Foundation\include;C:\Users\Victor\source\poco\Data\include;C:\Users\Victor\source\poco\Data\ODBC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)dependencies\include\poco\foundation\include;$(ProjectDir)dependencies\include\poco\data\include;$(ProjectDir)dependencies\include\poco\data\odbc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Victor\source\poco\cmake-build\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)\dependencies\lib\Poco\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="ConsoleShowData.cpp" />
-    <ClCompile Include="DummyDataProvider.cpp" />
-    <ClCompile Include="IDataProvider.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="recommender.cpp" />
-    <ClCompile Include="RecommenderSystem.cpp" />
-    <ClCompile Include="SqlDataProvider.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="ConsoleShowData.h" />
-    <ClInclude Include="Customer.h" />
-    <ClInclude Include="DummyDataProvider.h" />
-    <ClInclude Include="IDataProvider.h" />
-    <ClInclude Include="Item.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Recommender.h" />
-    <ClInclude Include="SalesHistory.h" />
-    <ClInclude Include="SqlDataProvider.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

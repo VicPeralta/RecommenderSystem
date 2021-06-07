@@ -15,54 +15,57 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RecommenderSystem.cpp">
+    <ClCompile Include="source\ConsoleShowData.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="source\DummyDataProvider.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="recommender.cpp">
+    <ClCompile Include="source\IDataProvider.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="IDataProvider.cpp">
+    <ClCompile Include="source\pch.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="DummyDataProvider.cpp">
+    <ClCompile Include="source\recommender.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="ConsoleShowData.cpp">
+    <ClCompile Include="source\RecommenderSystem.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="SqlDataProvider.cpp">
+    <ClCompile Include="source\SqlDataProvider.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="include\ConsoleShowData.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="IDataProvider.h">
+    <ClInclude Include="include\consoleUtils.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Customer.h">
+    <ClInclude Include="include\Customer.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Item.h">
+    <ClInclude Include="include\DummyDataProvider.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="SalesHistory.h">
+    <ClInclude Include="include\IDataProvider.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="DummyDataProvider.h">
+    <ClInclude Include="include\Item.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Recommender.h">
+    <ClInclude Include="include\pch.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="ConsoleShowData.h">
+    <ClInclude Include="include\Recommender.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="SqlDataProvider.h">
+    <ClInclude Include="include\SalesHistory.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SqlDataProvider.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
