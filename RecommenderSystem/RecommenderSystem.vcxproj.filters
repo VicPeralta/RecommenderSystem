@@ -27,7 +27,7 @@
     <ClCompile Include="source\pch.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="source\recommender.cpp">
+    <ClCompile Include="source\Recommender.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="source\RecommenderSystem.cpp">
